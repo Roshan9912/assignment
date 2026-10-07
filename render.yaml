@@ -1,8 +1,2 @@
-services:
-  - type: cron
-    name: scraping-assignment
-    runtime: python
-    plan: 0.5c-512mb
-    schedule: "0 0 * * *"
-    buildCommand: python -m pip install --upgrade pip && python -m pip install -r requirements.txt
-    startCommand: python main.py
+# Render deployment is intentionally disabled because Cron Jobs require a paid plan.
+# The equivalent free schedule is managed by GitHub Actions.
